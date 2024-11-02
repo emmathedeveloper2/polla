@@ -25,6 +25,8 @@ export const actions = {
 
         const redirect_url = `${url.origin}/api/oauth/callback/google`
 
+        console.log(redirect_url)
+
         const auth_provider = auth_methods.authProviders.find(provider => provider.name === 'google')
 
         if(!auth_provider) return {
