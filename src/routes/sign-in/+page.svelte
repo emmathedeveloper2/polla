@@ -20,6 +20,22 @@
 
 <svelte:head>
     <title>Polla | Sign In</title>
+
+	<meta name="og:url" content="https://polla.netlify.app" />
+	<meta name="og:title" content={data.poll.caption} />
+	<meta name="og:description" content="Get on this poll" />
+	<meta name="og:type" content="website" />
+	<meta name="og:image" content="/images/twitter_opengraph_light.png" />
+
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta property="twitter:domain" content="polla.netlify.app" />
+	<meta property="twitter:url" content="https://polla.netlify.app" />
+	<meta name="twitter:title" content="{data.poll.caption}" />
+	<meta name="twitter:description" content="Get on this poll" />
+	<meta
+		name="twitter:image"
+		content="/images/twitter_opengraph_light.png"
+	/>
 </svelte:head>
 
 <MaxWidthWrapper class="size-full">
