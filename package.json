@@ -27,6 +27,7 @@
   },
   "dependencies": {
     "@fontsource-variable/bricolage-grotesque": "^5.1.0",
+    "@sveltejs/adapter-netlify": "^4.3.6",
     "lucide-svelte": "^0.453.0",
     "pocketbase": "^0.21.5"
   }
