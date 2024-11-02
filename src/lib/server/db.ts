@@ -1,9 +1,10 @@
 import { env } from "$env/dynamic/private";
+import { dev } from '$app/environment'
 import PocketBase from "pocketbase";
 import { resolve_promise } from '$lib';
 import type { Option, PocketBasePageResponse, Poll , Comment } from "$lib/types";
 
-const DB_URL = env.NODE_ENV === "production" ? env.DATABASE_URL : env.DEV_DATABASE_URL;
+const DB_URL =  dev ? env.DEV_DATABASE_URL : env.DATABASE_URL;
 
 export const create_db_instance = () => {
     const db = new PocketBase(DB_URL);
