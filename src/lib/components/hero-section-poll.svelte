@@ -34,7 +34,9 @@
 	};
 
 	onMount(() => {
-		// setInterval(update_poll, 1000);
+		const interval = setInterval(update_poll, 3000);
+
+		return () => clearInterval(interval);
 	});
 </script>
 

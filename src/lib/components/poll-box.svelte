@@ -41,10 +41,10 @@
 
 <div class="mb-4 flex w-full flex-col gap-4 rounded border border-gray-200 p-2 *:select-none">
 	{#if poll.expand}
-		{@const { avatar, username, id } = poll.expand.author}
+		{@const { avatar, name, id } = poll.expand.author}
 		<div class="flex items-center gap-2">
-			<Avatar {avatar} {username} />
-			<p>{$page.data.user?.id == id ? 'You' : username}</p>
+			<Avatar {avatar} {name} />
+			<p>{$page.data.user?.id == id ? 'You' : name}</p>
 		</div>
 	{/if}
 

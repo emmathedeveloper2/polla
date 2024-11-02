@@ -2,6 +2,7 @@ export type User = {
     id: string,
     avatar: string,
     username: string,
+    name: string,
     email: string,
     bio: string,
     verified: boolean

@@ -6,8 +6,6 @@ export const load = async ({ locals }) => {
 
     if(!polls || err) return { error: 'Something went wrong' }
 
-    console.log(polls.items[0].expand?.author.avatar)
-
 	return {
 		polls
 	};

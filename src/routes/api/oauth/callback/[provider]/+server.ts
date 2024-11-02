@@ -31,7 +31,11 @@ export const GET = async ({ url , cookies , locals , params }) => {
     if(!auth_provider) throw redirect(302, '/sign-in')
 
     try {
-        await locals.db.collection('users').authWithOAuth2Code(auth_provider.name , code , expected_verifier , redirect_url)
+        await locals.db.collection('users').authWithOAuth2Code(auth_provider.name , code , expected_verifier , redirect_url , {
+            name: 'user' + Math.floor(Math.random() * 1000000000)
+        })
+
+        await locals.db.collection('users').authRefresh()
 
         cookies.set('auth', locals.db.authStore.exportToCookie() , { sameSite: 'lax' , path: '/' });
     } catch (error) {

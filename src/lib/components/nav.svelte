@@ -25,10 +25,10 @@
 			{/if}
 
 			{#if $page.url.pathname == '/feed' && $page.data}
-				{@const { username, avatar } = $page.data.user}
+				{@const { name, avatar } = $page.data.user}
 
 				<button on:click={(_) => profile_menu_open.set(true)} class="cursor-pointer">
-					<Avatar {username} {avatar} />
+					<Avatar {name} {avatar} />
 				</button>
 			{/if}
 		</div>

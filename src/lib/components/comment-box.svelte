@@ -12,12 +12,12 @@
 
 <div class="w-full p-2 flex gap-4">
     {#if comment.expand?.author}
-        {@const { avatar , username } = comment.expand?.author}
+        {@const { avatar , name } = comment.expand?.author}
 
-        <Avatar {avatar} {username}/>
+        <Avatar {avatar} {name}/>
 
         <div>
-            <b>{username}</b>
+            <b>{name}</b>
             <p>{comment.text}</p>
         </div>
     {/if}

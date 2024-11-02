@@ -15,6 +15,7 @@ export const create_db_instance = () => {
 export const create_user = async (db: PocketBase , data: Record<string , string>) => {
     return await resolve_promise(async () => await db.collection('users').create({
         username: data.username,
+        name: data.username,
         email: data.email,
         password: data.password,
         passwordConfirm: data.password,

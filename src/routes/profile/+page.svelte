@@ -56,18 +56,18 @@
             <!-- svelte-ignore a11y_click_events_have_key_events -->
             <!-- svelte-ignore a11y_no_static_element_interactions -->
             <div onclick={_ => $file_input?.click()} class="flex flex-col items-center gap-4 size-[100px] cursor-pointer">
-                <Avatar class="size-full" avatar={base64Avatar} username={data.user.username} />
+                <Avatar class="size-full" avatar={base64Avatar} name={data.user.name} />
             </div>
 
             <input bind:this={$file_input} type="file" name="avatar" class="hidden" accept="image/*" onchange={generate_base64_avatar} />
 
 			<input
 				type="text"
-				name="username"
+				name="name"
 				required
 				placeholder="username"
 				class="w-full rounded bg-gray-50 p-2 outline-none"
-				value={data.user.username}
+				value={data.user.name}
 			/>
 
 			<button

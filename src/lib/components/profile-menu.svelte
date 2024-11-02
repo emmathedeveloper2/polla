@@ -19,11 +19,11 @@
 		<div class="flex w-full flex-col items-center justify-center gap-2 md:w-[400px]">
 			<form action="?/logout" method="post" class="w-full p-2 bg-white rounded shadow-lg flex items-center flex-col gap-4">
 				{#if $page.data.user}
-					{@const { username, avatar } = $page.data.user}
+					{@const { name, avatar } = $page.data.user}
 
-					<Avatar {avatar} {username}/>
+					<Avatar {avatar} {name}/>
 
-					<p>{username}</p>
+					<p>{name}</p>
 				{/if}
 
 				<a
