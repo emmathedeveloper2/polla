@@ -25,7 +25,7 @@
 	<meta name="og:title" content="Polla" />
 	<meta name="og:description" content="Get on this poll" />
 	<meta name="og:type" content="website" />
-	<meta name="og:image" content="/images/twitter_opengraph_light.png" />
+	<meta name="og:image" content="https://polla-app.netlify.app/images/twitter_opengraph_light.png" />
 
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta property="twitter:domain" content="polla.netlify.app" />
@@ -34,7 +34,7 @@
 	<meta name="twitter:description" content="Get on this poll" />
 	<meta
 		name="twitter:image"
-		content="/images/twitter_opengraph_light.png"
+		content="https://polla-app.netlify.app/images/twitter_opengraph_light.png"
 	/>
 </svelte:head>
 
