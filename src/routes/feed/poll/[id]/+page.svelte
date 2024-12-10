@@ -18,15 +18,15 @@
 	<title>Polla | {data.poll.caption}</title>
 	<meta name="description" content="Create and Take Polls with Ease." />
 
-	<meta name="og:url" content="https://polla.netlify.app" />
+	<meta name="og:url" content="https://polla-app.netlify.app" />
 	<meta name="og:title" content={data.poll.caption} />
 	<meta name="og:description" content="Get on this poll" />
 	<meta name="og:type" content="website" />
 	<meta name="og:image" content="https://polla-app.netlify.app/images/twitter_opengraph_dark.png" />
 
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta property="twitter:domain" content="polla.netlify.app" />
-	<meta property="twitter:url" content="https://polla.netlify.app" />
+	<meta property="twitter:domain" content="polla-app.netlify.app" />
+	<meta property="twitter:url" content="https://polla-app.netlify.app" />
 	<meta name="twitter:title" content="{data.poll.caption}" />
 	<meta name="twitter:description" content="Get on this poll" />
 	<meta
